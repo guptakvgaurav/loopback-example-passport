@@ -76,7 +76,7 @@ passportConfigurator.init();
 app.use(flash());
 
 passportConfigurator.setupModels({
-  userModel: app.models.user,
+  userModel: app.models.guest,
   userIdentityModel: app.models.userIdentity,
   userCredentialModel: app.models.userCredential,
 });
@@ -116,7 +116,7 @@ app.get('/signup', function(req, res, next) {
 });
 
 app.post('/signup', function(req, res, next) {
-  var User = app.models.user;
+  var User = app.models.guest;
 
   var newUser = {};
   newUser.email = req.body.email.toLowerCase();

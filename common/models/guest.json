@@ -1,6 +1,6 @@
 {
-  "name": "user",
-  "plural": "users",
+  "name": "guest",
+  "plural": "guests",
   "base": "User",
   "properties": {},
   "validations": [],
